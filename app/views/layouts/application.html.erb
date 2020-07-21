@@ -13,11 +13,51 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://kit.fontawesome.com/da5a115199.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   </head>
 
   <body>
+    <header>
+      <nav class="navbar navbar-expand-sm d-flex m-2 m-md-3">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+          </button>
+          <div class="name d-sm-none">
+              <%= link_to "Augustine Calvino", '/' %>
+          </div>
+          <div class="collapse navbar-collapse mr-auto" id="navbarContent">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <%= link_to "Welcome", '/welcome', class: 'nav-link' %>
+                  </li>
+                  <li class="nav-item">
+                      <%= link_to "Portfolio", '/portfolio', class: 'nav-link' %>
+                  </li>
+                  <li class="nav-item">
+                      <%= link_to "Blog", '/blog', class: 'nav-link' %>
+                  </li>
+                  <li class="nav-item">
+                      <%= link_to "About", '/about', class: 'nav-link' %>
+                  </li>
+                  <li class="nav-item">
+                      <%= link_to "Contact", '/contact', class: 'nav-link' %>
+                  </li>
+              </ul>
+          </div>
+          <div class="name d-none d-sm-block">
+              <%= link_to "Augustine Calvino", '/' %>
+          </div>
+      </nav>
+    </header>
     <%= yield %>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <footer class="float-right mx-3 my-5">
+      <ul class="social_media">
+          <li><a href="#"><i class="fab fa-github fa-2x"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+      </ul>
+      <p class="text-muted">© 2020 Augustine Calvino</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
