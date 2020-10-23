@@ -7,6 +7,11 @@
     overflow: hidden;
 }
 
+.hero {
+    object-fit: cover;
+    object-position: top;
+}
+
 
 .thumbnail {
     max-width: 400px;
@@ -17,5 +22,16 @@
         height: 300px;
         width: 400px;
         object-fit: cover;
+        object-position: top;
+    }
+}
+
+#projects a {
+    color: black;
+    transition: color .5s;
+
+    &:hover {
+        color: #007bff;
+        text-decoration: none;
     }
 }
