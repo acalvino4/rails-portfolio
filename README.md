@@ -1,24 +1,7 @@
-# README
+# Rails Portfolio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project was an exercise in devoping a basic static site using Ruby on Rails. The extent to which this is a portfolio is only in that it includes screenshots of some other rails projects I coded while working up to this one. Is is not my actual portfolio - that can be found at https://augustinecalvino.dev/. This project uses Bootstrap classes for some simple styling. It also gave me experience deploying to the Heroku serverless platform where I am hosting this live.
 
-Things you may want to cover:
+## running locally
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Just clone the repository, run `bundle install` from the project root, and then `rails server`.
